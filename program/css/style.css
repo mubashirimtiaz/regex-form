@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap');
+body{
+  font-family: 'Baloo Thambi 2', cursive;
+  background: linear-gradient(to top, #e2e0e0, #ffffff);
+}
+
+legend{
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #36847c;
+  text-align: center;
+  /* margin: 30px 0; */
+}
+label{
+  margin-top:15px;
+  text-transform: capitalize;
+  color: #36847c;
+  font-weight: 600;
+  
+}
+input,select,textarea{
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  display: block;
+  border: 2px solid;
+  width: 100%;
+  border-color: #cccccc;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+input[type=file]{
+  background-color: #ffffff;
+}
+input[type=checkbox],input[type=radio]{
+  width: initial;
+  display: initial;
+}
+input + p{
+  font-size: 0.8em;
+  font-weight: 600;
+  color: orange;
+  /* text-align: center; */
+  margin: 0;
+  height: 0;
+  opacity: 0;
+}
+input.invalid{
+  border-color: orange;
+}
+input.valid{
+  border-color: #6ad5ab;
+}
+input.invalid + p{
+  height: auto;
+  opacity: 1;
+}
+/* input.valid + p{
+  height: 0;
+  opacity: 0;
+} */
+
+form .guide{
+  color: crimson;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0px 5px;
+  text-transform: capitalize;
+}
+.btn-submit{
+  background-color: #36847c;
+  color: #e2e0e0;
+  font-weight: 700;
+  border: 2px solid #36847c;
+  transform: all 0.9s ease 0s !important;
+
+}
+.btn-submit:hover{
+  background: #e2e0e0;
+  color: #36847c;
+}
+
+.todo-container{
+  padding: 20px 0;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.todo-card{
+  width: 95%;
+  max-width: 500px;
+}
+

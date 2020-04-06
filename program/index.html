@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <title>FORM</title>
+</head>
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+
+  <div class="todo-container">
+    <div class="todo-card">
+      <form action="" method="post" autocomplete="off">
+        <fieldset>
+          <legend>student information</legend>
+          <label for="stdname">Name</label> <span class="guide">( please provide name as appear on cnic )</span>
+          <input type="text" name="stdname" id="stdname"  maxlength="50"
+            minlength="3" required>
+            <p class="validMdg">Name must contains alphabets</p>
+          <label for="stdemail">Email</label>
+          <input type="email" name="stdemail" id="stdemail"  maxlength="50"
+            required>
+            <p class="validMdg">Email must be in correct format i.e abc@xxx.xyz</p>
+          <label for="stdfathername">father name</label> <span class="guide">( please provide name as appear on cnic )</span>
+          <input type="text" name="stdfathername" id="stdfathername"  maxlength="50" minlength="3" required>
+          <p class="validMdg">Name must contains alphabets</p>
+          <label for="stdcnic">Cnic / b-form</label> <span class="guide">( XXXX-XXXXXXX-X )</span>
+          <input type="text" name="stdcnic" id="stdcnic" required>
+          <p class="validMdg">CNIC # should contain only 13 digits. CNIC Should Have Numbers Only.</p>
+          
+          <label for="stdcountry">Country</label>
+          <select name="stdcountry" id="stdcountry" >
+            <option value="1">Pakistan</option>
+            <option value="2">Australlia</option>
+            <option value="3">Japan</option>
+            <option value="4">Dubai</option>
+            <option value="5">England</option>
+            <option value="6">Srilanka</option>
+            <option value="7">USA</option>
+          </select>
+          <label for="stdaddress">address</label>
+          <input type="text" name="stdaddress" id="stdaddress"  maxlength="200">
+          <p class="validMdg">Address must be within 200 characters</p>
+          <label for="stdgender">gender</label>
+          <br />
+          <input type="radio" name="stdgender" id="stdgender"> male
+          &nbsp;
+          <input type="radio" name="stdgender" id="stdgender"> female
+          <br />
+          <label for="stdhavelaptop">do you have laptop</label>
+          <br />
+          <input type="checkbox" name="stdhavelaptop" id="stdhavelaptop"> Yes
+          &nbsp;
+          <input type="checkbox" name="stdhavelaptop" id="stdhavelaptop"> No
+          <br />
+          <label for="stddob">date of birth</label>
+          <input type="date" name="stddob" id="stddob"  required>
+          <label for="stdimg">upload picture</label>
+          <input type="file" name="stdimg" id="stdimg"  required
+            style="padding:5px">
+          <label for="stdcomment">any query</label>
+          <textarea name="stdcomment" id="stdcomment" rows="3" placeholder="write..."
+            ></textarea>
+          <br />
+          <input type="submit" value="Update profile" class="btn btn-block btn-submit">
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+</body>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+
+</html>
